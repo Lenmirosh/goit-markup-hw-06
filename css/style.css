@@ -1086,6 +1086,7 @@ main {
   background-position: center;
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
+  transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-caption.link {
   text-decoration: underline;
