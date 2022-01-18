@@ -708,10 +708,11 @@
             <h2 class="modal-visually-hidden">Форма</h2>
 
             <div class="modal-registration">
-              <label class="modal-label" id="form-name"> Имя </label>
+              <label class="modal-label" for="form-name"> Имя </label>
 
               <div class="modal-wrap-input">
                 <input
+                  id="form-name"
                   class="modal-input"
                   type="text"
                   name="form-name"
@@ -726,12 +727,13 @@
               </div>
             </div>
             <div class="modal-registration">
-              <label class="modal-label" id="form-phone"> Телефон </label>
+              <label class="modal-label" for="form-phone"> Телефон </label>
 
               <div class="modal-wrap-input">
                 <input
+                  id="form-phone"
                   class="modal-input"
-                  type="text"
+                  type="number"
                   name="form-phone"
                   placeholder=" "
                 />
@@ -744,12 +746,13 @@
               </div>
             </div>
             <div class="modal-registration">
-              <label class="modal-label" id="form-mail"> Почта </label>
+              <label class="modal-label" for="form-mail"> Почта </label>
 
               <div class="modal-wrap-input">
                 <input
+                  id="form-mail"
                   class="modal-input"
-                  type="text"
+                  type="email"
                   name="form-mail"
                   placeholder=" "
                 />
@@ -761,7 +764,7 @@
                 </svg>
               </div>
             </div>
-            <div class="modal-registration">
+            <div class="modal-registration comment">
               <label class="modal-label" id="form-comment"> Комментарий </label>
 
               <input
@@ -771,27 +774,27 @@
                 placeholder="Введите текст"
               />
             </div>
-          </form>
 
-          <div class="modal-submit">
-            <div class="modal-caption agreement">
-              <label class="modal-checkbox-label">
-                <input
-                  class="checkbox"
-                  type="checkbox"
-                  name="checkbox"
-                  value="Соглашаюсь с рассылкой и принимаю"
-                />
-                <span class="modal-checkbox-icon"> </span>
-                Соглашаюсь с рассылкой и принимаю
-                <a class="modal-caption link" href=""> Условия договора</a>
-              </label>
+            <div class="modal-submit">
+              <div class="modal-caption agreement">
+                <label class="modal-checkbox-label">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                    value="Соглашаюсь с рассылкой и принимаю"
+                  />
+                  <span class="modal-checkbox-icon"> </span>
+                  Соглашаюсь с рассылкой и принимаю
+                  <a class="modal-caption link" href=""> Условия договора</a>
+                </label>
+              </div>
+
+              <button type="submit" class="modal-primary-button">
+                Отправить
+              </button>
             </div>
-
-            <button type="submit" class="modal-primary-button">
-              Отправить
-            </button>
-          </div>
+          </form>
 
           <script src="./js/modal.js"></script>
         </div>
